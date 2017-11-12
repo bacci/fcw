@@ -1,0 +1,9 @@
+{% extends "layout.phtml" %}
+
+{% block body %}
+<h1>{{ page_name }}</h1>
+<div>Bem vindo {{ user["id"] }} - {{ user["name"] }}</div>
+<div><a href="/dashboard">Ir para Home</a></div>
+<div><a href="/login?logar=1">Login</a></div>
+<div><a href="/logout">Logout</a></div>
+{% endblock %}
